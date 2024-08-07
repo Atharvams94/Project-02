@@ -1,29 +1,6 @@
 import numpy as np
 
 def fft(data):
-  """
-  Performs the Fast Fourier Transform (FFT) on a given data set.
-
-  Args:
-      data: A numpy array containing the data for which to compute the FFT.
-
-  Returns:
-      A numpy array containing the frequency spectrum of the data.
-  """
-  """
-  Analyzes data from a file using a specified algorithm.
-
-  Args:
-      data_file: Path to the file containing the data.
-      algorithm: Algorithm to use for analysis (default or "advanced").
-
-  Returns:
-      A dictionary containing analysis results.
-
-  Raises:
-      ValueError: If the algorithm is not supported.
-  """
-
   # Read data from file
   try:
     with open(data_file, 'r') as f:
