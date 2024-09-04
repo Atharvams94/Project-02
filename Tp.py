@@ -5,18 +5,7 @@ def fft(data):
 
   return results
 
-# Example usage
-data_path = "data.txt"  # Replace with your actual data file path
-analysis_results = analyze_data(data_path, algorithm="advanced")
-
-if analysis_results:
-  print("Analysis Results:")
-  
-  import aiohttp
-import aiofiles
-import asyncio
-import json
-from datetime import datetime
+#
 
 class WeatherFetcher:
     def __init__(self, api_key, base_url="http://api.openweathermap.org/data/2.5/weather"):
