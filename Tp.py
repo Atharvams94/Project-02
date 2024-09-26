@@ -15,17 +15,7 @@ class WeatherFetcher:
             async with session.get(self.base_url, params=params) as response:
                 if response.status == 200:
                     data = await response.json()
-                    return data
-                else:
-                    response.raise_for_status()
-
-    async def save_weather_data(self, city, data):
-        filename = f"{city}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        async with aiofiles.open(filename, 'w') as file:
-            await file.write(json.dumps(data, indent=4))
-        print(f"Weather data saved to {filename}")
-
-    def parse_weather_data(self, data):
+           
         weather_desc = data['weather'][0]['description']
         temp = data['main']['temp']
         feels_like = data['main']['feels_like']
