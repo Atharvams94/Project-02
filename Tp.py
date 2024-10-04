@@ -16,14 +16,7 @@ class WeatherFetcher:
                 if response.status == 200:
                     data = await response.json()
            
-        weather_desc = data['weather'][0]['description']
-        temp = data['main']['temp']
-        feels_like = data['main']['feels_like']
-        humidity = data['main']['humidity']
-        wind_speed = data['wind']['speed']
-
-        return f"""
-        Weather: {weather_desc}
+       
         Temperature: {temp}°C
         Feels Like: {feels_like}°C
         Humidity: {humidity}%
