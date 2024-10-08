@@ -21,7 +21,6 @@ class WeatherFetcher:
         Feels Like: {feels_like}°C
         Humidity: {humidity}%
         Wind Speed: {wind_speed} m/s
-        """
 
     async def get_and_save_weather(self, city):
         try:
