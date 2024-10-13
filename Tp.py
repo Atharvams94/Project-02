@@ -5,13 +5,7 @@ class WeatherFetcher:
         self.api_key = api_key
         self.base_url = base_url
 
-    async def fetch_weather(self, city):
-        params = {
-            'q': city,
-            'appid': self.api_key,
-            'units': 'metric'
-        }
-           
+ 
        
         Temperature: {temp}°C
         Feels Like: {feels_like}°C
