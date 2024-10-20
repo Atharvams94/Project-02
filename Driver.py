@@ -12,21 +12,7 @@ def fft(data):
   # Preprocess data (remove empty lines, convert to floats)
   data = [float(line.strip()) for line in data if line.strip()]
 
-  # Choose analysis algorithm
-  if algorithm == "default":
-    results = {"average": sum(data) / len(data)}
-  elif algorithm == "advanced":
-    # Import libraries for advanced analysis (assuming not built-in)
-    import statistics
-    results = {
-      "average": statistics.mean(data),
-      "standard_deviation": statistics.stdev(data),
-      "median": statistics.median(data)
-    }
-  else:
-    raise ValueError(f"Unsupported algorithm: {algorithm}")
-
-  return results
+  
 
 # Example usage
 data_path = "data.txt"  # Replace with your actual data file path
