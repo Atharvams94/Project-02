@@ -14,9 +14,7 @@ def fft(data):
 
   
 
-# Example usage
-data_path = "data.txt"  # Replace with your actual data file path
-analysis_results = analyze_data(data_path, algorithm="advanced")
+
 
 if analysis_results:
   print("Analysis Results:")
