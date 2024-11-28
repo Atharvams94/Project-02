@@ -9,13 +9,6 @@ def fft(data):
     print(f"Error: File {data_file} not found.")
     return None
 
-  # Preprocess data (remove empty lines, convert to floats)
-  data = [float(line.strip()) for line in data if line.strip()]
-
-  
-
-
-
 if analysis_results:
   print("Analysis Results:")
   
